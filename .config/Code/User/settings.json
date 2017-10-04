@@ -1,0 +1,11 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.rulers": [80],
+    "git.enableCommitSigning": true,
+    "terminal.external.linuxExec": "rxvt-unicode-256color",
+    "editor.renderControlCharacters": false,
+    "telemetry.enableTelemetry": false
+}
