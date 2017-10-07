@@ -11,6 +11,8 @@
     "terminal.integrated.cursorBlinking": true,
     "editor.renderControlCharacters": false,
     "telemetry.enableTelemetry": false,
+    "python.pythonPath": "python3",
+    "python.linting.pylintPath": "pylint-3",
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "latex-workshop.latex.toolchain": [
