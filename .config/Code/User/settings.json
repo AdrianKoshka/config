@@ -4,8 +4,28 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "editor.rulers": [80],
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
     "git.enableCommitSigning": true,
-    "terminal.external.linuxExec": "rxvt-unicode-256color",
+    "terminal.external.linuxExec": "urxvt256c-ml",
+    "terminal.integrated.cursorBlinking": true,
     "editor.renderControlCharacters": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-cd",
+                "-outdir=../out",
+                "-jobname=",
+                "-xelatex",
+                "${workspaceRootFolderName}/src/header.tex"
+            ]
+        }
+    ]
 }
