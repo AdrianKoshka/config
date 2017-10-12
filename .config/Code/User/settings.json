@@ -15,19 +15,7 @@
     "python.linting.pylintPath": "pylint-3",
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
-    "latex-workshop.latex.toolchain": [
-        {
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-cd",
-                "-outdir=../out",
-                "-jobname=",
-                "-xelatex",
-                "${workspaceRootFolderName}/src/header.tex"
-            ]
-        }
-    ]
+    "[python]": {
+        
+    }
 }
