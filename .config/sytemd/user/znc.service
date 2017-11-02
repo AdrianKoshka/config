@@ -6,10 +6,8 @@ After=network-online.target
 ExecStart=/usr/local/bin/znc -f --datadir=/home/adrian/.znc
 ProtectSystem=strict
 ProtectKernelTunables=true
-ProtectKernelModules=true
 ProtectControlGroups=true
 ProtectHome=true
-PrivateDevices=true
 ReadWritePaths=/home/adrian/.znc
 
 [Install]
