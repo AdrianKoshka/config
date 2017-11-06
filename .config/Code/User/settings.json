@@ -4,8 +4,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "editor.rulers": [80],
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code'",
     "git.enableCommitSigning": true,
     "terminal.external.linuxExec": "urxvt256c-ml",
     "terminal.integrated.cursorBlinking": true,
