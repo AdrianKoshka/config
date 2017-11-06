@@ -11,7 +11,7 @@
 workspace_layout tabbed
 set $mod Mod4
 new_window pixel 1
-workspace 1 output HDMI-1
+workspace 1 output HDMI-A-0
 #workspace 2 output HDMI-0
 #workspace 1 output VGA-0
 # Font for window titles. Will also be used by the bar unless a different font
@@ -155,8 +155,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        tray_output HDMI-1
-        output HDMI-1
+        tray_output HDMI-A-0
+        output HDMI-A-0
         status_command i3status
 }
 
