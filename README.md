@@ -3,7 +3,7 @@ Various config files
 
 ## Structure
 
-### `.config`
+### `~/.config`
 
 ```
 .config
