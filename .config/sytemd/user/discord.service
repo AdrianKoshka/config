@@ -1,10 +1,12 @@
 [Unit]
 Description=Sandboxing Discord
+After=network.target
 
 [Service]
 Type=simple
 Environment=DISPLAY=:0
 ExecStart=/home/alc/.bin/Discord/Discord
+KillMode=mixed
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=/home/alc/.bin/Discord /home/alc/Downloads/ /home/alc/.config/discord /var/run/user/1000/discord-ipc-0
