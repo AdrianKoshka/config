@@ -1,6 +1,6 @@
 [Unit]
 Description=set color temperature of display according to time of day
-Documentation=man:redshif(1)
+Documentation=man:redshift(1)
 After=network.target
 
 [Service]
