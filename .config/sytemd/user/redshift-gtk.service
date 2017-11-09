@@ -15,4 +15,4 @@ Environment=DISPLAY=:0
 KillMode=process
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
