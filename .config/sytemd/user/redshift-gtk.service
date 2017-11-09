@@ -1,0 +1,19 @@
+[Unit]
+Description=set color temperature of display according to time of day
+Documentation=man:redshif(1)
+After=network.target
+
+[Service]
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectKernelTunables=true
+#ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictNamespaces=true
+Type=simple
+ExecStart=/usr/bin/redshift-gtk
+Environment=DISPLAY=:0
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
