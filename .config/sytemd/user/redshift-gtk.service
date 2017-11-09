@@ -7,7 +7,6 @@ After=network.target
 ProtectSystem=strict
 ProtectHome=read-only
 ProtectKernelTunables=true
-#ProtectKernelModules=true
 ProtectControlGroups=true
 RestrictNamespaces=true
 Type=simple
