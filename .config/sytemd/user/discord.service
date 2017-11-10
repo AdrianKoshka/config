@@ -10,7 +10,3 @@ KillMode=mixed
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=/home/alc/.bin/Discord /home/alc/Downloads/ /home/alc/.config/discord /var/run/user/1000/discord-ipc-0
-
-[Socket]
-ListenStream=/tmp/discord.sock
-ListenStream=/var/run/user/1000/discord-ipc-0
