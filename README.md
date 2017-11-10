@@ -17,6 +17,8 @@ Various config files
 └── sytemd
     └── user
         ├── discord.service
+        ├── discord.socket
+        ├── redshift-gtk.service
         └── znc.service
 ```
 
