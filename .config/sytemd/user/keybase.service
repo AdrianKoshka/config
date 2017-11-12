@@ -1,0 +1,11 @@
+[Unit]
+Description=Crypto for everyone
+Documentation=https://keybase.io/docs
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/run_keybase
+ProtectKernelTunables=true
+ProtectSystem=strict
+RestrictNamespaces=true
+ReadWritePaths=/keybase /usr/share/icons/hicolor
