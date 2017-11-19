@@ -18,7 +18,14 @@ Various config files
     └── user
         ├── discord.service
         ├── discord.socket
-        ├── redshift-gtk.service
+        ├── kbfs.service.d
+        │   └── override.conf
+        ├── keybase.service.d
+        │   └── override.conf
+        ├── mpd.service.d
+        │   └── override.conf
+        ├── redshift-gtk.service.d
+        │   └── override.conf
         └── znc.service
 ```
 
@@ -30,8 +37,6 @@ etc
     └── system
         ├── bitlbee.service
         ├── bitlbee.service.d
-        │   └── override.conf
-        ├── mpd.service.d
         │   └── override.conf
         └── unifi.service.d
             └── override.conf
