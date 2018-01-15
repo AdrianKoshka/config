@@ -4,7 +4,7 @@ Conflicts=discord.service
 
 [Socket]
 ListenStream=/tmp/discord.sock
-ListenStream=/var/run/user/1000/discord-ipc-0
+ListenStream=%t/discord-ipc-0
 
 [Install]
 WantedBy=sockets.target
