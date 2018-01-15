@@ -3,12 +3,12 @@ Description=ZNC, an advanced IRC bouncer
 After=network-online.target
 
 [Service]
-ExecStart=/usr/local/bin/znc -f --datadir=/home/adrian/.znc
+ExecStart=/usr/local/bin/znc -f --datadir=%h/.znc
 ProtectSystem=strict
 ProtectKernelTunables=true
 ProtectControlGroups=true
 ProtectHome=true
-ReadWritePaths=/home/adrian/.znc
+ReadWritePaths=%h/.znc
 
 [Install]
 WantedBy=multi-user.target

@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 Environment=DISPLAY=:0
-ExecStart=/home/alc/.bin/Discord/Discord
+ExecStart=%h/.local/bin/Discord/Discord
 KillMode=mixed
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=/home/alc/.bin/Discord /home/alc/Downloads/ /home/alc/.config/discord /var/run/user/1000/discord-ipc-0
+ReadWritePaths=%h/.local/bin/Discord %h/Downloads/ %h/.config/discord %t/discord-ipc-0
