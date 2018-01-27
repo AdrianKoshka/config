@@ -16,3 +16,4 @@ MemoryDenyWriteExecute=true
 LockPersonality=true
 RestrictNamespaces=true
 LockPersonality=true
+RuntimeDirectory=backsync
