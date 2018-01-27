@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 Environment=DISPLAY=:0
 ExecStart=%h/.local/bin/Discord/Discord
-KillMode=mixed
+KillMode=control-group
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=%h/.local/bin/Discord %h/Downloads/ %h/.config/discord %t/discord-ipc-0
