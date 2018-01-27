@@ -11,3 +11,4 @@ ProtectKernelTunables=true
 ProtectControlGroups=true
 RestrictNamespaces=true
 PrivateTmp=true
+NoNewPrivileges=true
