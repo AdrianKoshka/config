@@ -1,0 +1,9 @@
+[Unit]
+Description=daily backup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/backsync
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/mnt/storage/backup/alc
