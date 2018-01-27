@@ -12,3 +12,7 @@ ProtectControlGroups=true
 RestrictNamespaces=true
 PrivateTmp=true
 NoNewPrivileges=true
+MemoryDenyWriteExecute=true
+LockPersonality=true
+RestrictNamespaces=true
+LockPersonality=true
