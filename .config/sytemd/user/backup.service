@@ -7,3 +7,6 @@ ExecStart=/usr/bin/backsync
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=/mnt/storage/backup/alc
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true
