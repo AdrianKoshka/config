@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 Environment=DISPLAY=:0
-ExecStart=%h/.local/bin/Discord/Discord
-KillMode=control-group
+ExecStart=flatpak run --filesystem=xdg-download:rw com.discordapp.Discord
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=%h/.local/bin/Discord %h/Downloads/ %h/.config/discord %t/discord-ipc-0
+PrivateTmp=true
+ReadWritePaths=%h/Downloads/ %t/discord-ipc-0
