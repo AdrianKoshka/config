@@ -14,8 +14,10 @@ Various config files
 │   └── config
 ├── mpd
 │   └── mpd.conf
-└── sytemd
+└── systemd
     └── user
+        ├── backup.service
+        ├── backup.timer
         ├── discord.service
         ├── discord.socket
         ├── kbfs.service.d
@@ -26,6 +28,7 @@ Various config files
         │   └── override.conf
         ├── redshift-gtk.service.d
         │   └── override.conf
+        ├── weechat.service
         └── znc.service
 ```
 
@@ -38,6 +41,7 @@ etc
         ├── bitlbee.service
         ├── bitlbee.service.d
         │   └── override.conf
+        ├── fix-resolved.service
         └── unifi.service.d
             └── override.conf
 ```
