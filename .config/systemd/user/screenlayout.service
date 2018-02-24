@@ -1,0 +1,20 @@
+[Unit]
+Description=Fix my screen layout
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /home/alc/.screenlayout/default.sh
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true
+NoNewPrivileges=true
+MemoryDenyWriteExecute=true
+LockPersonality=true
+RestrictNamespaces=true
+LockPersonality=true
+
+[Install]
+WantedBy=graphical.target
