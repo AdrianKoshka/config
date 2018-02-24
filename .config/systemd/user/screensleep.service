@@ -1,0 +1,18 @@
+[Unit]
+Description=Put the display(s) to sleep
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xset dpms force off
+Environment=DISPLAY=:0
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true
+PrivateTmp=true
+NoNewPrivileges=true
+MemoryDenyWriteExecute=true
+LockPersonality=true
+RestrictNamespaces=true
+LockPersonality=true
