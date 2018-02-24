@@ -18,8 +18,8 @@ Various config files
     └── user
         ├── backup.service
         ├── backup.timer
-        ├── discord.service
-        ├── discord.socket
+        ├── discord.service [DEPRECATED]
+        ├── discord.socket  [DEPRECATED]
         ├── kbfs.service.d
         │   └── override.conf
         ├── keybase.service.d
@@ -45,7 +45,7 @@ Various config files
         │   └── override.conf
         ├── fix-resolved.service
         └── unifi.service.d
-            └── override.conf
+            └── override.conf [DEPRECATED]
 ```
 
 ## [License](LICENSE)
