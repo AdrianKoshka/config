@@ -28,6 +28,8 @@ Various config files
         │   └── override.conf
         ├── redshift-gtk.service.d
         │   └── override.conf
+        ├── screenlayout.service
+        ├── screensleep.service
         ├── weechat.service
         └── znc.service
 ```
@@ -35,7 +37,7 @@ Various config files
 ### `/etc`
 
 ```
-etc
+/etc
 └── systemd
     └── system
         ├── bitlbee.service
