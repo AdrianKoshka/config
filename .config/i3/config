@@ -11,7 +11,8 @@
 workspace_layout tabbed
 set $mod Mod4
 new_window pixel 1
-workspace 1 output HDMI-A-0
+workspace 2 output HDMI-A-0
+workspace 1 output VGA-0
 #workspace 2 output HDMI-0
 #workspace 1 output VGA-0
 # Font for window titles. Will also be used by the bar unless a different font
@@ -28,7 +29,6 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt256c-ml
-
 #start atom
 #bindsym $mod+a exec atom
 
@@ -40,7 +40,7 @@ bindsym $mod+d exec dmenu_run -fn "Deja Vu Sans Mono-8"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Deja Vu Sans Mono-8'"
 
 # change focus
 #bindsym $mod+j focus left
@@ -160,13 +160,13 @@ bar {
         status_command i3status
 }
 
-#bar {
-#	position bottom
-#	tray_output none
+bar {
+	position bottom
+	tray_output none
 #	output DVI-D-0
-#	#output VGA-0
-#	status_command bash /home/adrian/.bin/i3status.sh
-#}
+	output VGA-0
+	status_command i3status
+}
 
 #bar {
 #	position bottom
