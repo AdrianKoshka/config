@@ -4,7 +4,7 @@ After=systemd-resolved.service network.target
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/restorecon -v /var/run/systemd/resolve/resolv.conf
+ExecStart=/sbin/restorecon -v /run/systemd/resolve/resolv.conf
 PrivateTmp=yes
 PrivateDevices=yes
 ProtectSystem=strict
@@ -13,7 +13,7 @@ ProtectControlGroups=yes
 ProtectKernelTunables=yes
 ProtectKernelModules=yes
 MemoryDenyWriteExecute=yes
-ReadWritePaths=/var/run/systemd/resolve/resolv.conf
+ReadWritePaths=/run/systemd/resolve/resolv.conf
 
 [Install]
 WantedBy=multi-user.target
