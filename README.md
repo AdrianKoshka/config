@@ -20,12 +20,6 @@ Various config files
     └── user
         ├── backup.service
         ├── backup.timer
-        ├── discord.service [DEPRECATED]
-        ├── discord.socket  [DEPRECATED]
-        ├── kbfs.service.d
-        │   └── override.conf
-        ├── keybase.service.d
-        │   └── override.conf
         ├── mpd.service.d
         │   └── override.conf
         ├── redshift-gtk.service.d
@@ -45,9 +39,7 @@ Various config files
         ├── bitlbee.service
         ├── bitlbee.service.d
         │   └── override.conf
-        ├── fix-resolved.service
-        └── unifi.service.d
-            └── override.conf [DEPRECATED]
+        └── fix-resolved.service
 ```
 
 ## [License](LICENSE)
