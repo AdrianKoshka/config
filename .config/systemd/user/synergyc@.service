@@ -1,0 +1,15 @@
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors                         
+# SPDX-License-Identifier: GPL-2.0+
+[Unit]
+Description=Establish synergy connection at %i
+Documentation=man:synergyc(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/synergyc --no-restart --no-daemon %i
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+MemoryDenyWriteExecute=true
