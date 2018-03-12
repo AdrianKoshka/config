@@ -6,10 +6,9 @@ Documentation=man:synergyc(1)
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/synergyc --no-restart --no-daemon %i
-PrivateTmp=true
+ExecStart=/usr/bin/synergyc --no-daemon %i
 ProtectHome=true
 ProtectSystem=true
-ProtectKernelTunables=true
-ProtectControlGroups=true
-MemoryDenyWriteExecute=true
+
+[Install]
+WantedBy=default.target
