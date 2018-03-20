@@ -8,7 +8,7 @@ After=network.target
 PassEnvironment=DISPLAY
 ExecStart=/usr/bin/synergy --no-daemon --config %h/.config/Synergy/desktops.conf
 Type=simple
-ProtectHome=readonly
+ProtectHome=read-only
 ProtectSystem=true
 ReadWritePaths=%h/.config/Synergy
 
