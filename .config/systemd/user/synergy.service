@@ -1,0 +1,16 @@
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors                         
+# SPDX-License-Identifier: GPL-2.0+
+[Unit]
+Description=Synergy keyboard & mouse sharing software
+After=network.target
+
+[Service]
+PassEnvironment=DISPLAY
+ExecStart=/usr/bin/synergy --no-daemon --config %h/.config/Synergy/desktops.conf
+Type=simple
+ProtectHome=readonly
+ProtectSystem=true
+ReadWritePaths=%h/.config/Synergy
+
+[Install]
+WantedBy=default.target
