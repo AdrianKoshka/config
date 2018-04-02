@@ -3,12 +3,16 @@
 [Unit]
 Description=Establish synergy connection at %i
 Documentation=man:synergyc(1)
+After=network.target
+Requires=localsynergy@am1m.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/synergyc --no-daemon %i
+ExecStart=/usr/bin/synergyc --no-restart --no-daemon %i
 ProtectHome=true
 ProtectSystem=true
+Restart=always
+RestartSec=2
 
 [Install]
 WantedBy=default.target
