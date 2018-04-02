@@ -20,12 +20,16 @@ Various config files
     └── user
         ├── backup.service
         ├── backup.timer
+        ├── localsynergy@.service
         ├── mpd.service.d
         │   └── override.conf
         ├── redshift-gtk.service.d
         │   └── override.conf
         ├── screenlayout.service
         ├── screensleep.service
+        ├── socks5@.service
+        ├── synergyc@.service
+        ├── synergy.service
         ├── weechat.service
         └── znc.service
 ```
