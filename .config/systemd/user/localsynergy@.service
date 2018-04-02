@@ -1,0 +1,13 @@
+[Unit]
+Description=Forward the port for synergy from %i
+
+[Service]
+Type=simple
+ProtectSystem=strict
+ProtectHome=read-only
+Restart=always
+RestartSec=10
+ExecStart=/usr/bin/ssh -F %h/.ssh/config -NL 24800:localhost:24800 %i
+
+[Install]
+WantedBy=default.target
