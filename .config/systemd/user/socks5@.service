@@ -1,0 +1,10 @@
+[Unit]
+Description=SSH SOCKSv5 proxy at %i
+
+[Service]
+Type=simple
+ProtectSystem=strict
+ProtectHome=read-only
+Restart=always
+RestartSec=10
+ExecStart=/usr/bin/ssh -F %h/.ssh/config -ND 8945 %i
