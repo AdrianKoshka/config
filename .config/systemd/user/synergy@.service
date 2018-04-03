@@ -6,11 +6,13 @@ After=network.target
 
 [Service]
 PassEnvironment=DISPLAY
-ExecStart=/usr/bin/synergy --no-daemon --config %h/.config/Synergy/desktops.conf
+ExecStart=/usr/bin/synergy --address %i --no-restart --no-daemon --config %h/.config/Synergy/desktops.conf
 Type=simple
 ProtectHome=read-only
 ProtectSystem=true
 ReadWritePaths=%h/.config/Synergy
+Restart=always
+RestartSec=10
 
 [Install]
-WantedBy=default.target
+WantedBy=alc.target
