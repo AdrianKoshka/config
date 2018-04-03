@@ -1,0 +1,6 @@
+[Unit]
+Description=Starts stuff on login
+Requires=default.target
+Conflicts=rescue.service rescue.target
+After=default.target
+AllowIsolate=yes
