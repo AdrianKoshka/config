@@ -1,18 +1,18 @@
-# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors                         
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors
 # SPDX-License-Identifier: GPL-2.0+
 [Unit]
-Description=Establish synergy connection at %i
-Documentation=man:synergyc(1)
+Description=Synergy keyboard & mouse sharing software
 After=network.target
-Requires=localsynergy@am1m.service
 
 [Service]
+PassEnvironment=DISPLAY
+ExecStart=/usr/bin/synergy --address %i --no-restart --no-daemon --config %h/.config/Synergy/desktops.conf
 Type=simple
-ExecStart=/usr/bin/synergyc --no-restart --no-daemon %i
-ProtectHome=true
+ProtectHome=read-only
 ProtectSystem=true
+ReadWritePaths=%h/.config/Synergy
 Restart=always
-RestartSec=2
+RestartSec=10
 
 [Install]
-WantedBy=default.target
+WantedBy=alc.target
