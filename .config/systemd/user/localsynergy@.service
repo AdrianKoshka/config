@@ -1,4 +1,4 @@
-# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors                         
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors 
 # SPDX-License-Identifier: GPL-2.0+
 [Unit]
 Description=Forward the port for synergy from %i
@@ -8,7 +8,7 @@ Type=simple
 ProtectSystem=strict
 ProtectHome=read-only
 Restart=always
-RestartSec=10
+RestartSec=5
 ExecStart=/usr/bin/ssh -F %h/.ssh/config -NL 24800:localhost:24800 %i
 
 [Install]
