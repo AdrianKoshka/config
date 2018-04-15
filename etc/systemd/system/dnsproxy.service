@@ -1,3 +1,5 @@
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors                         
+# SPDX-License-Identifier: GPL-2.0+
 [Unit]
 Description=CloudFlare DNS over HTTPS Proxy
 Wants=network-online.target
