@@ -1,0 +1,12 @@
+[Unit]
+Description=CloudFlare DNS over HTTPS Proxy
+Wants=network-online.target
+After=network.target network-online.target
+ 
+[Service]
+DynamicUser=yes
+ExecStart=/usr/local/bin/cloudflared proxy-dns --port 1054 --upstream https://1.1.1.1/.well-known/dns-query --upstream https://
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target
