@@ -18,6 +18,7 @@ Various config files
 │   └── mpd.conf
 └── systemd
     └── user
+        ├── alc.target
         ├── backup.service
         ├── backup.timer
         ├── localsynergy@.service
@@ -29,7 +30,7 @@ Various config files
         ├── screensleep.service
         ├── socks5@.service
         ├── synergyc@.service
-        ├── synergy.service
+        ├── synergy@.service
         ├── weechat.service
         └── znc.service
 ```
@@ -40,9 +41,10 @@ Various config files
 /etc
 └── systemd
     └── system
-        ├── bitlbee.service
-        ├── bitlbee.service.d
+        ├── bitlbee@.service
+        ├── bitlbee@.service.d
         │   └── override.conf
+        ├── dnsproxy@.service
         └── fix-resolved.service
 ```
 
