@@ -1,0 +1,18 @@
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors
+# SPDX-License-Identifier: GPL-2.0+
+[Unit]
+Description=Open-source KVM software (Server)
+After=network.target
+
+[Service]
+PassEnvironment=DISPLAY
+ExecStart=%h/.local/bin/barriers --address %i --no-restart --no-daemon --config %h/.config/barrier/desktops.config
+Type=simple
+ProtectHome=read-only
+ProtectSystem=true
+ReadWritePaths=%h/.config/barrier
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=alc.target
