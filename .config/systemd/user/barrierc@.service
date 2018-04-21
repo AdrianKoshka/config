@@ -3,7 +3,7 @@
 [Unit]
 Description=Open-source KVM software (client)
 After=network.target
-Requires=localsynergy@am1m.service
+Requires=localbarrier@am1m.service
 
 [Service]
 Type=simple
