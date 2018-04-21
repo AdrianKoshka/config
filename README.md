@@ -21,7 +21,9 @@ Various config files
         ├── alc.target
         ├── backup.service
         ├── backup.timer
-        ├── localsynergy@.service
+        ├── barrierc@.service
+        ├── barriers@.service
+        ├── localbarrier@.service
         ├── mpd.service.d
         │   └── override.conf
         ├── redshift-gtk.service.d
