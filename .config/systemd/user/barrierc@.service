@@ -1,0 +1,17 @@
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors
+# SPDX-License-Identifier: GPL-2.0+
+[Unit]
+Description=Open-source KVM software (client)
+After=network.target
+Requires=localsynergy@am1m.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/barrierc --no-restart --no-daemon %i
+ProtectHome=true
+ProtectSystem=true
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
