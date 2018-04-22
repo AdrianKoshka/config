@@ -6,7 +6,7 @@ After=network.target
 
 [Service]
 PassEnvironment=DISPLAY
-ExecStart=%h/.local/bin/barriers --address %i --no-restart --no-daemon --config %h/.config/barrier/desktops.config
+ExecStart=%h/.local/bin/barriers --address %i --enable-crypto --no-restart --no-daemon --config %h/.config/barrier/desktops.config
 Type=simple
 ProtectHome=read-only
 ProtectSystem=true
