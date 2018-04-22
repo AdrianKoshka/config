@@ -10,7 +10,7 @@ ExecStart=%h/.local/bin/barriers --address %i --enable-crypto --no-restart --no-
 Type=simple
 ProtectHome=read-only
 ProtectSystem=true
-ReadWritePaths=%h/.config/barrier
+PrivateTmp=true
 Restart=always
 RestartSec=10
 
