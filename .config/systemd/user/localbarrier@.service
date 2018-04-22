@@ -7,6 +7,7 @@ Description=Forward the port for barrier from %i
 Type=simple
 ProtectSystem=strict
 ProtectHome=read-only
+PrivateTmp=true
 Restart=always
 RestartSec=5
 ExecStart=/usr/bin/ssh -F %h/.ssh/config -NL 24800:localhost:24800 %i

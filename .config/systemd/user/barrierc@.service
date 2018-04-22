@@ -10,6 +10,7 @@ Type=simple
 ExecStart=%h/.local/bin/barrierc --enable-crypto --no-restart --no-daemon %i
 ProtectHome=true
 ProtectSystem=true
+PrivateTmp=true
 Restart=always
 RestartSec=2
 
