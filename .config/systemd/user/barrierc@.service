@@ -7,7 +7,7 @@ Requires=localbarrier@am1m.service
 
 [Service]
 Type=simple
-ExecStart=%h/.local/bin/barrierc --no-restart --no-daemon %i
+ExecStart=%h/.local/bin/barrierc --enable-crypto --no-restart --no-daemon %i
 ProtectHome=true
 ProtectSystem=true
 Restart=always
