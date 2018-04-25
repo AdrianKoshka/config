@@ -9,6 +9,8 @@ Various config files
 
 ```
 .config
+├── barrier
+│   └── desktops.config
 ├── Code
 │   └── User
 │       └── settings.json
