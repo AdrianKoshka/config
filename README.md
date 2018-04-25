@@ -46,8 +46,7 @@ Various config files
         ├── bitlbee@.service
         ├── bitlbee@.service.d
         │   └── override.conf
-        ├── dnsproxy@.service
-        └── fix-resolved.service
+        └── dnsproxy@.service
 ```
 
 ## [License](LICENSE)
