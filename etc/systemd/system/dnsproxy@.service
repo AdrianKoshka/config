@@ -1,10 +1,10 @@
-# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors                         
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors
 # SPDX-License-Identifier: GPL-2.0+
 [Unit]
 Description=CloudFlare DNS over HTTPS Proxy on %i
 Wants=network-online.target
 After=network.target network-online.target
- 
+
 [Service]
 MemoryAccounting=yes
 DynamicUser=yes
@@ -24,6 +24,6 @@ RestrictRealtime=yes
 RestrictAddressFamilies=AF_UNIX AF_NETLINK AF_INET AF_INET6
 SystemCallFilter=~@clock @cpu-emulation @debug @keyring @module @mount @obsolete @raw-io @reboot @swap @setuid @chown @file-system @sync @privileged
 NoNewPrivileges=yes
- 
+
 [Install]
 WantedBy=multi-user.target
