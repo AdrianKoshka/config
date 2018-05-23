@@ -1,0 +1,11 @@
+# Copyright 2017-2018, Adrian Lucrèce Céleste and the config contributors
+# SPDX-License-Identifier: GPL-2.0+
+[Unit]
+Description=Open spice tunnel @ %i
+Require=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/screen -dmS tunnel-%i /usr/bin/ssh -NL %i:localhost:%i akx
+ProtectSystem=strict
+ProtectHome=true
