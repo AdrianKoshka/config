@@ -5,7 +5,8 @@ Description=daily backup
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/backsync
+ExecStart=/usr/bin/rsync -avhuP %h --delete --exclude-from=%h/.exclude /mnt/storage/backup/
+IOAccounting=true
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=/mnt/storage/backup/alc
